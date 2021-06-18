@@ -271,7 +271,7 @@ def video_info_url_age_restricted(video_id: str, embed_html: str) -> str:
 
 
 def _video_info_url(params: OrderedDict) -> str:
-    return "https://www.youtube.com/get_video_info?" + urlencode(params)
+    return "https://www.youtube.com/get_video_info?" + urlencode(params) + "&eurl=https%3A%2F%2Fyoutube.googleapis.com%2Fv%2Fonz2k4zoLjQ&html5=1&c=TVHTML5&cver=6.20180913"
 
 
 def js_url(html: str) -> str:
